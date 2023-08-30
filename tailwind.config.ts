@@ -10,10 +10,12 @@ const config: Config = {
     extend: {
       gridTemplateColumns: {
         app: "auto 1fr",
+        profile: "max-content auto max-content",
       },
 
       colors: {
-        test: "#8257e6",
+        "purple-50": "#FAF5FF",
+        "purple-500": "#6941C6",
       },
     },
   },
