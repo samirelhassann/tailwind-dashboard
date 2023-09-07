@@ -3,6 +3,8 @@
 
 import { LogOut } from "lucide-react";
 
+import { Button } from "../Button";
+
 export function Profile() {
   return (
     <div className="mt-6 grid grid-cols-profile items-center gap-3 border-t-2 pt-6">
@@ -21,9 +23,9 @@ export function Profile() {
         </span>
       </div>
 
-      <button type="button" className="ml-auto">
+      <Button type="button" variant="ghost">
         <LogOut className="h-5 w-5 text-zinc-500" />
-      </button>
+      </Button>
     </div>
   );
 }
