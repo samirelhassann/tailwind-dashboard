@@ -24,7 +24,7 @@ export default function Home() {
       </header>
 
       <main className="flex flex-col">
-        <div className="flex items-center justify-between border-b border-zinc-200 py-6">
+        <div className="flex flex-col gap-2 border-b border-zinc-200 py-6 lg:flex lg:flex-row  lg:justify-between">
           <div className="space-y-1">
             <h2 className="text-lg font-medium text-zinc-900">Personal info</h2>
             <span className="text-sm text-zinc-500">
@@ -47,7 +47,7 @@ export default function Home() {
           id="settings"
           className="flex w-full flex-col divide-y divide-zinc-200"
         >
-          <div className="grid grid-cols-form-row py-6">
+          <div className="flex flex-col gap-2 py-6 lg:grid lg:grid-cols-form-row lg:gap-0">
             <label
               htmlFor="name"
               className="text-sm/5 font-medium text-zinc-700"
@@ -66,7 +66,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-form-row py-6">
+          <div className="flex flex-col gap-2 py-6 lg:grid lg:grid-cols-form-row lg:gap-0">
             <label
               htmlFor="email"
               className="text-sm/5 font-medium text-zinc-700"
@@ -81,7 +81,7 @@ export default function Home() {
             </Input.Root>
           </div>
 
-          <div className="grid grid-cols-form-row py-6">
+          <div className="flex flex-col gap-2 py-6 lg:grid lg:grid-cols-form-row lg:gap-0">
             <div className="flex flex-col">
               <label
                 htmlFor="photo"
@@ -101,7 +101,7 @@ export default function Home() {
             </FileInput.Root>
           </div>
 
-          <div className="grid grid-cols-form-row py-6">
+          <div className="flex flex-col gap-2 py-6 lg:grid lg:grid-cols-form-row lg:gap-0">
             <div className="flex flex-col">
               <label
                 htmlFor="role"
@@ -116,7 +116,7 @@ export default function Home() {
             </Input.Root>
           </div>
 
-          <div className="grid grid-cols-form-row py-6">
+          <div className="flex flex-col gap-2 py-6 lg:grid lg:grid-cols-form-row lg:gap-0">
             <label
               htmlFor="country"
               className="text-sm/5 font-medium text-zinc-700"
@@ -130,7 +130,7 @@ export default function Home() {
             </Select.Root>
           </div>
 
-          <div className="grid grid-cols-form-row py-6">
+          <div className="flex flex-col gap-2 py-6 lg:grid lg:grid-cols-form-row lg:gap-0">
             <label
               htmlFor="timezone"
               className="text-sm/5 font-medium text-zinc-700"
@@ -147,7 +147,7 @@ export default function Home() {
             </Select.Root>
           </div>
 
-          <div className="grid grid-cols-form-row py-6">
+          <div className="flex flex-col gap-2 py-6 lg:grid lg:grid-cols-form-row lg:gap-0">
             <div className="flex flex-col">
               <label
                 htmlFor="bio"
@@ -202,7 +202,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-form-row py-6">
+          <div className="flex flex-col gap-2 py-6 lg:grid lg:grid-cols-form-row lg:gap-0">
             <div className="flex flex-col">
               <label
                 htmlFor="portfolio"

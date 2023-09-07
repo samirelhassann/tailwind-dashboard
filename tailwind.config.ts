@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        app: "auto 1fr",
+        app: "minmax(18rem,20rem) 1fr",
         profile: "max-content auto max-content",
         "form-row": "15vw minmax(25vw, 30vw)",
       },

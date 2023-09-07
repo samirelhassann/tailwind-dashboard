@@ -26,7 +26,7 @@ export function TabItem({
       data-isSelected={isSelected}
       onClick={handleOnClick}
     >
-      <span className="rounded group-focus-visible:ring-2 group-focus-visible:ring-violet-400 group-focus-visible:ring-offset-4 group-data-[isSelected=true]:text-violet-700">
+      <span className="whitespace-nowrap rounded group-focus-visible:ring-2 group-focus-visible:ring-violet-400 group-focus-visible:ring-offset-4 group-data-[isSelected=true]:text-violet-700">
         {title}
       </span>
     </Tabs.Trigger>
