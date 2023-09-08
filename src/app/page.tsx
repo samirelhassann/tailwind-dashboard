@@ -94,7 +94,7 @@ export default function Home() {
               </span>
             </div>
 
-            <FileInput.Root className="flex items-start gap-5">
+            <FileInput.Root className="flex flex-col gap-5 lg:flex-row lg:items-start">
               <FileInput.ImagePreview />
               <FileInput.Trigger />
               <FileInput.Control />
@@ -161,7 +161,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-3">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="flex flex-col gap-4 lg:grid lg:grid-cols-2">
                 <Select.Root placeholder="" defaultValue="normal">
                   <Select.SelectItem text="Normal Text" value="normal" />
                   <Select.SelectItem text="Markdown" value="md" />
