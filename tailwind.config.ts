@@ -54,6 +54,7 @@ const config: Config = {
     },
   },
 
-  plugins: [],
+  // eslint-disable-next-line @typescript-eslint/no-var-requires, global-require
+  plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 };
 export default config;

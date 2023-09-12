@@ -24,7 +24,7 @@ const fileItem = tv({
   variants: {
     status: {
       loading: {
-        container: "",
+        container: "dark:border-zinc-500",
       },
       complete: {
         container: "border-violet-500",
@@ -88,19 +88,23 @@ export function FileItem({ name, size }: FileItemProps) {
 
   return (
     <div key={name} className={container()}>
-      <div className="rounded-full border-4 border-violet-100 bg-violet-200 p-2 text-violet-600">
+      <div className="rounded-full border-4 border-violet-100 bg-violet-200 p-2 text-violet-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-500">
         <File className="h-4 w-4" />
       </div>
 
       <div className="flex w-full items-start justify-between gap-1">
         <div className="flex w-full flex-col">
-          <span className="text-sm font-medium text-zinc-700">{name}</span>
-          <span className="text-sm/5 text-zinc-500">{formatSize(size)}</span>
+          <span className="text-sm font-medium text-zinc-700 dark:text-zinc-100">
+            {name}
+          </span>
+          <span className="text-sm/5 text-zinc-500 dark:text-zinc-400">
+            {formatSize(size)}
+          </span>
 
           <div className="mt-1 flex items-center gap-3">
             <ProgressBar percent={percent} />
 
-            <span className="text-sm/5 font-medium text-zinc-700">
+            <span className="text-sm/5 font-medium text-zinc-700 dark:text-zinc-400">
               {formatedPercent}
             </span>
           </div>
@@ -108,7 +112,7 @@ export function FileItem({ name, size }: FileItemProps) {
 
         <div className="flex w-10 justify-center">
           {checked && (
-            <CheckCircle2 className="h-6 w-6 fill-violet-600 text-white" />
+            <CheckCircle2 className="h-6 w-6 fill-violet-600 text-white dark:fill-violet-800 dark:text-zinc-400" />
           )}
 
           {status === "loading" && (

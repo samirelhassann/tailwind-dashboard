@@ -17,7 +17,7 @@ export function SettingsTabs() {
     <Tabs.Root>
       <ScrollAra.Root className="w-full" type="scroll">
         <ScrollAra.Viewport className="w-full overflow-x-scroll">
-          <Tabs.List className="mt-6 flex w-full items-center gap-4 border-b border-zinc-200">
+          <Tabs.List className="mt-6 flex w-full items-center gap-4 border-b border-zinc-200 dark:border-zinc-700">
             {sidebarItems.map((item) => (
               <TabItem
                 value={item.id}
